@@ -14,6 +14,6 @@ public class CamScript : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        RB.velocity = (player.position - transform.position)*10;
+        RB.velocity = ((player.position*3f+Camera.main.ScreenToWorldPoint(Input.mousePosition))/4f - transform.position)*10;
     }
 }
