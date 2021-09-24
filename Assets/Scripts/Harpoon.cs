@@ -17,6 +17,8 @@ public class Harpoon : MonoBehaviour
     [HideInInspector] public bool anchored;
     [HideInInspector] public float potentialHeight;
     private Movement movement;
+    [SerializeField] float minDistance;
+    [SerializeField] float reelSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +45,18 @@ public class Harpoon : MonoBehaviour
                 harp.GetComponent<Rigidbody2D>().AddForce(harpoonForce * bodyHarpoon.transform.right);
                 GetComponent<Rigidbody2D>().AddForce(playerForce * -1 * bodyHarpoon.transform.right);
             }
+        }
+
+        if(Input.GetMouseButton(1))
+        {
+
+            if (SJ2D.distance > minDistance)
+            {
+
+                SJ2D.distance -= reelSpeed;
+
+            }
+
         }
 
         if (harp != null)
