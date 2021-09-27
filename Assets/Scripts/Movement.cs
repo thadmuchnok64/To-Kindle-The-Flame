@@ -31,6 +31,17 @@ public class Movement : MonoBehaviour
     // Put your physics stuff here.
     void FixedUpdate()
     {
+        // REMOVE THIS IN FINAL GAME
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
+        //
+
+
+
         if (!harpoon.anchored && !onGround)
         {
             RB.gravityScale = 7;
