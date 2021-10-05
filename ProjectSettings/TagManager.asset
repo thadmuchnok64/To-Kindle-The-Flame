@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Dialogue
   layers:
   - Default
   - TransparentFX
@@ -39,17 +40,26 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Map
     uniqueID: 915579247
+    locked: 0
+  - name: Sky
+    uniqueID: 3526766697
+    locked: 0
+  - name: Background3
+    uniqueID: 2788767377
+    locked: 0
+  - name: Background2
+    uniqueID: 3025816247
     locked: 0
   - name: Background
     uniqueID: 3143883277
     locked: 0
   - name: Midground
     uniqueID: 1641938339
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: Gameplay
     uniqueID: 1320380193
